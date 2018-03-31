@@ -7,3 +7,11 @@ void swappy(T *s,T *t){
     *s = *t;
     *t = temp;
 }
+template<class U>
+U toNumber(string str){
+    U temp;
+    for(int i =0;i<str.size();i++){
+        temp = temp * 10+(str[i]-48);
+    }
+    return temp;
+}

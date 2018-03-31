@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
+
     int array[4] = {1,14,2,3};
     int size = sizeof(array)/sizeof(array[0]);
     for(int i = 1;i<size;i++){
@@ -9,6 +10,7 @@ int main(){
                 int temp = array[j];
                 array[j] = array[j-1];
                 array[j-1] = temp;
+                 
             }
         }
     }
